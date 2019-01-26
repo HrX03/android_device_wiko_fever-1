@@ -1,0 +1,114 @@
+# Partitions
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram     0660    root    nvram
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo   0660    root    nvram
+
+# CCCI
+/dev/ccci*                0660   radio      radio
+/dev/ttyC*                0660   radio      radio
+/dev/ccci_aud             0660   media      audio
+
+# GSM
+/dev/ptmx                 0666   root       radio
+
+# Connectivity
+/dev/stpwmt               0660   system     system
+/dev/wmtdetect            0660   system     system
+
+# WIFI
+/dev/wmtWifi              0660   wifi       wifi
+
+# BT
+/dev/stpbt                0660   bluetooth  bluetooth
+/dev/ttyC2                0660   gps        gps
+
+# GPS
+/dev/stpgps               0660   gps        gps
+/sys/class/gpsdrv/gps   pwrctl     0660       gps     gps
+/sys/class/gpsdrv/gps   suspend    0660       gps     gps
+/sys/class/gpsdrv/gps   state      0660       gps     gps
+/sys/class/gpsdrv/gps   pwrsave    0660       gps     gps
+/sys/class/gpsdrv/gps   status     0660       gps     gps
+
+# FMRadio
+/dev/fm			              0660   system	    media
+
+# Camera
+/dev/camera-isp           0660   system	    camera
+/dev/camera-fdvt          0660   system	    camera
+/dev/kd_camera_hw         0660   system	    camera
+/dev/kd_camera_flashlight 0660   system	    camera
+/dev/kd_camera_hw_bus2    0660   system	    camera
+/dev/CAM_CAL_DRV          0660   system	    camera
+/dev/MAINAF               0660   system	    camera
+
+# Sensor
+/dev/hwmsensor            0660   system	    nvram
+/dev/msensor              0660   system	    nvram
+/dev/gsensor              0660   system	    nvram
+/dev/als_ps               0660   radio	    nvram
+/dev/aal_als              0660   system	    nvram
+/sys/class/misc/m_alsps_misc   alsactive         0660   system	    system
+/sys/class/misc/m_alsps_misc   alsbatch          0660   system	    system
+/sys/class/misc/m_alsps_misc   alsdelay          0660   system	    system
+/sys/class/misc/m_alsps_misc   alsdevnum         0440   system	    system
+/sys/class/misc/m_alsps_misc   alsflush          0660   system	    system
+/sys/class/misc/m_alsps_misc   psactive          0660   system	    system
+/sys/class/misc/m_alsps_misc   psbatch           0660   system	    system
+/sys/class/misc/m_alsps_misc   psdelay           0660   system	    system
+/sys/class/misc/m_alsps_misc   psdevnum          0440   system	    system
+/sys/class/misc/m_alsps_misc   psflush           0660   system	    system
+
+/sys/class/misc/m_acc_misc     accactive         0660   system	    system
+/sys/class/misc/m_acc_misc     accbatch          0660   system	    system
+/sys/class/misc/m_acc_misc     accdelay          0660   system	    system
+/sys/class/misc/m_acc_misc     accdevnum         0440   system	    system
+/sys/class/misc/m_acc_misc     accflush          0660   system	    system
+
+/sys/class/misc/m_mag_misc     magactive         0660   system	    system
+/sys/class/misc/m_mag_misc     magbatch          0660   system	    system
+/sys/class/misc/m_mag_misc     magdelay          0660   system	    system
+/sys/class/misc/m_mag_misc     magdevnum         0440   system	    system
+/sys/class/misc/m_mag_misc     magflush          0660   system	    system
+/sys/class/misc/m_mag_misc     magoactive        0660   system	    system
+/sys/class/misc/m_mag_misc     magobatch         0660   system	    system
+/sys/class/misc/m_mag_misc     magodelay         0660   system	    system
+/sys/class/misc/m_mag_misc     magoflush         0660   system	    system
+
+/sys/class/misc/m_gyro_misc	gyroenablenodata 0660   system	    system
+/sys/class/misc/m_gyro_misc	gyroactive 	0660   system	    system
+/sys/class/misc/m_gyro_misc	gyrodelay 	0660   system	    system
+/sys/class/misc/m_gyro_misc	gyrobatch 	0660   system	    system
+/sys/class/misc/m_gyro_misc	gyroflush 	0660   system	    system
+
+# Mali
+/dev/mali0                0666   root       root
+
+# ION
+/dev/ion                  0664   system     system
+
+# CMDQ
+/dev/mtk_cmdq             0644   system     system
+
+# Offload Service
+/dev/offloadservice       0660   media      media
+
+# Display
+/dev/sw_sync              0660   system     graphics
+/dev/mtk_disp_mgr         0660   system     graphics
+/sys/devices/platform/mtk_disp_mgr.0   rgb      0660    system    system
+/dev/sec                  0660   root     system
+
+# Vcodec
+/dev/Vcodec               0660   media      camera
+
+# Devmap
+/dev/devmap               0440   system     camera
+
+# BWC
+/dev/MTK_SMI              0660   system     camera
+
+# Sched 
+/dev/mtk_sched            0660   system     media
+
+# Fingerprint
+/dev/esfp0                0660   system     system

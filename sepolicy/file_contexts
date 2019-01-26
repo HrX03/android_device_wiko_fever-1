@@ -1,0 +1,2 @@
+# Sysfs nodes
+/sys/bus/platform/drivers/tgeseture/tgesture_enable           u:object_r:sysfs_smartwake:s0
